@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1, .box2 {
+            background-color: aqua;
+            height: 600px;
+        }
+
+        .box2 {
+            margin-bottom:300px;
+        }
+        .box_normal {
+            background-color: purple;
+            height: 100px;
+            width: 100px;
+        }
+
+        .box_relative1 {
+            background-color: yellow;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            top:250px;
+        }
+
+        /* r2测试颜色覆盖问题 */
+        .box_relative2 {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            left: 70px;
+        }
+
+        .box_absolute {
+            background-color: pink;
+            height: 100px;
+            width: 100px;
+            position:absolute;
+            left:70px;
+        }
+
+        .box3_fixed {
+            background-color: darkgreen;
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            right: 0;
+            top:120px;
+        }
+    </style>
+</head>
+<body>
+    <h1>相对定位</h1>
+    <div class="box1">
+        <div class="box_normal"></div>
+        <div class="box_relative1"></div>
+        <div class="box_normal"></div>
+        <div class="box_relative2"></div>
+    </div>
+    <h1>绝对定位</h1>
+    <div class="box2">
+        <div class="box_normal"></div>
+        <div class="box_normal"></div>
+        <div class="box_absolute"></div>
+        <div class="box_normal"></div>
+    </div>
+    <h1>固定定位</h1>
+    <div class="box3_fixed"></div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html {
+            font-size:40px;
+        }
+        .box_px {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+
+        .box_rem {
+            margin-top: 100px;
+            width: 5rem;
+            height: 5rem;
+            background-color: aqua;
+        }
+
+        .container {
+            margin-top: 3rem;
+            height: 10rem;
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            flex-wrap:wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: space-around;
+        }
+
+        .item {
+            width: 2rem;
+            font-size:1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="box_px"></div>
+    <div class="box_rem"></div>
+
+    <script>
+        function resetHtmlFontSize(){
+            document.documentElement.style.fontSize = screen.width / 10 + 'px';
+        }
+        resetHtmlFontSize();
+        window.onresize = resetHtmlFontSize;
+    </script>
+
+
+    <div class="container">
+        <div class="item" style="background-color: red;">1</div>
+        <div class="item" style="background-color:gray;">2</div>
+        <div class="item" style="background-color:blue;">3</div>
+        <div class="item" style="background-color:yellow;">4</div>
+        <div class="item" style="background-color:purple;">5</div>
+        <div class="item" style="background-color:green;">6</div>
+    </div>
+</body>
+</html>

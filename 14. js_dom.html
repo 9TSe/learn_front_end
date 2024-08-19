@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#">null</a>
+    <div id="box1">id selector div tag</div>
+    <div class="box2">class selector div tag</div>
+    <div>normal div tag</div>
+    <button>just button</button>
+    <script>
+        let id_element = document.getElementById('box1');
+        console.log(id_element);
+
+        let class_element = document.getElementsByClassName('box2')[0];
+        console.log(class_element);
+
+        let tag_element = document.getElementsByTagName('div')[2];
+        console.log(tag_element);
+
+        id_element.innerHTML = '<a href="#">null link</a>';
+        class_element.innerText = '<a href="#">null link</a>';
+        tag_element.style.color = 'red';
+        tag_element.style.fontSize = '25px';
+
+        let button_element = document.getElementsByTagName('button')[0];
+        console.log(button_element);
+        
+        button_element.onclick = function(){alert('dont click me');}
+
+        button_element.addEventListener('click', function(){alert('no click');});
+        button_element.addEventListener('click', click_event);
+
+        function click_event()
+        {
+            alert('hope never exist click');
+        }
+    </script>
+</body>
+</html>

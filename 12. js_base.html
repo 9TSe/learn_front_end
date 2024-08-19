@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x;
+        let y = 5;
+        let z = x;
+        let name = 'ntse';
+        let empty_val = null;
+        let undefine_val = undefined;
+        const pi = 3.14;
+        // let and const is better;
+        console.log(x);
+        console.log(y);
+        console.log(z);
+        console.log(name);
+        console.log(empty_val);
+        console.log(undefine_val);
+        console.log(pi);
+
+        for(let i = 0; i < 10; ++i)
+        {
+            if(i % 2 == 0)
+            {
+                console.log(i, 'even num');
+                continue;
+            }
+            if(i < 3)
+            {
+                console.log(i, 'small');
+                while(i < 3)
+                {
+                    console.log('now, i = ', i);
+                    ++i;
+                }
+            }
+            else if(i >= 3 && i < 7)
+                console.log(i, 'middle');
+            else
+            {
+                console.log(i, 'big');
+                break;
+            }
+        }
+
+        function hello(name){
+            console.log('hello ' + name);
+            return 'hello what';
+        }
+
+        hello('ntse');
+        console.log(hello('world'));
+    </script>
+</body>
+</html>

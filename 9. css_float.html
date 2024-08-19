@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            background-color: aqua;
+            border: 5px solid brown;
+
+            width: 600px;
+            height: 500px;
+            /* overflow: hidden;  效果与下文等同*/
+        }
+
+        /* .father::after { 
+            content: "";
+            display: table;
+            clear:both;
+        } */
+
+        .left_float_son {
+            float: left;
+            width: 100px;
+            height: 120px;
+            background-color: greenyellow;
+        }
+
+        .right_float_son {
+            float:right;
+            width: 100px;
+            height: 120px;
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="left_float_son">左浮动</div>
+        <div class="right_float_son">右浮动</div>
+    </div>
+
+    <p>texttexttexttexttexttexttexttexttexttexttexttexttext</p>
+</body>
+</html>

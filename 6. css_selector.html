@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+
+    <style>
+        h2{ /* element selector */
+            color: red;
+        }
+
+        .highlight{ /* class selector */
+            color: blue;
+        }
+
+        #header-four{ /* id selector */
+            color: green;
+        }
+
+        * { /* universal selector */
+          font-family: 'cascadia code';
+          font-weight: bolder;
+        }
+
+        .father>.son { /* son selector */
+            color:aqua;
+        }
+
+        .father .grandson {     /* Descendant Selector */
+            color:coral;
+        }
+
+        p + h5 { /* Adjacent Sibling Selector */
+            background-color: bisque;
+        }
+
+        #Pseudo-class:hover {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>intro selector</h1>
+    <h2>element selector eg</h2>
+    <h3 class="highlight">class selector eg</h3>
+    <h4 id="header-four">id selector</h4>
+
+    <div class="father">
+        <p class="son">son selector</p>
+        <div>
+            <p class="grandson">descendants selector</p>
+        </div>
+    </div>
+
+    <h5>five title</h5>
+    <p>just p</p>
+    <h5>next five title: Adjacent Sibling Selector</h5>
+
+    <h3 id="Pseudo-class">Pseudo-class Selector</h3>
+
+</body>
+</html>
